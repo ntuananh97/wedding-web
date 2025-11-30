@@ -1035,7 +1035,6 @@ export default function Home() {
               <div className="ladi-group">
                 <div
                   id="FORM2"
-                  is_auto_funnel=""
                   data-config-id="6635f69f2dbe070012bd1e29"
                   className="ladi-element ladi-animation-hidden"
                 >
@@ -1064,7 +1063,6 @@ export default function Home() {
                             autoComplete="off"
                             tabIndex={1}
                             name="name"
-                            required=""
                             className="ladi-form-control"
                             type="text"
                             placeholder="Tên của bạn"
@@ -1081,7 +1079,6 @@ export default function Home() {
                             autoComplete="off"
                             tabIndex={4}
                             name="message"
-                            required=""
                             className="ladi-form-control"
                             placeholder="Gửi lời nhắn đến cô dâu chú rể"
                             defaultValue={""}
