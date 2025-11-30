@@ -1,4 +1,6 @@
 'use client';
+import AudioPlayer from "./components/AudioPlayer";
+import ClickMusic from "./components/ClickMusic";
 import { useScrollAnimation } from "./hooks/useScrollAnimation";
 
 export default function Home() {
@@ -1301,10 +1303,12 @@ export default function Home() {
                   <div className="ladi-box ladi-transition" />
                 </div>
                 <div id="HEADLINE136" className="ladi-element">
-                  <p className="ladi-headline">
+                  <ClickMusic />
+
+                  {/* <p className="ladi-headline">
                     click music
                     <br />
-                  </p>
+                  </p> */}
                 </div>
                 <div id="IMAGE41" className="ladi-element">
                   <div className="ladi-image">
