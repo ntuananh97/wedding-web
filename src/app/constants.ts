@@ -1,0 +1,18 @@
+export const IMAGES = {
+    GET_MARRIED_BANNER: '/images/get-married-banner.png',
+    INVITATION_GROOM: '/images/wedding-invitation.png',
+    INVITATION_BRIDE: '/images/wedding-invitation-background.png',
+    INVITATION_3: '/images/wedding-invitation-background-2.png',
+    CALENDAR: '/images/wedding-invitation-background-3.png',
+    CHAPTER_BG: '/images/wedding-invitation-background-4.png',
+    CHAPTER_LIST_1: '/images/wedding-invitation-background-5.png',
+    CHAPTER_LIST_2: '/images/wedding-invitation-background-6.png',
+    CHAPTER_LIST_3: '/images/wedding-invitation-background-7.png',
+    CHAPTER_LIST_4: '/images/wedding-invitation-background-8.png',
+    SLIDE_1: '/images/wedding-invitation-background-9.png',
+    SLIDE_2: '/images/wedding-invitation-background-10.png',
+    SLIDE_3: '/images/wedding-invitation-background-11.png',
+    SLIDE_4: '/images/wedding-invitation-background-12.png',
+    SLIDE_5: '/images/wedding-invitation-background-13.png',
+    COUNT: "/images/wedding-invitation-background-14.png",
+}

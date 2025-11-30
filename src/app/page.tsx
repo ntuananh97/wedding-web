@@ -10,7 +10,8 @@ export default function Home() {
           <div className="ladi-section-background" />
           <div className="ladi-container">
             <div id="BOX1" className="ladi-element">
-              <div className="ladi-box ladi-transition" />
+              <div className="ladi-box ladi-transition">
+              </div>
             </div>
             <div id="BOX2" className="ladi-element">
               <div className="ladi-box ladi-transition" />
@@ -28,9 +29,9 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE4" className="ladi-element">
                   <h3 className="ladi-headline">
-                    Tuấn nguyễn
+                    Tuấn Anh
                     <br />
-                    huyền lê
+                    Lan Anh
                     <br />
                   </h3>
                 </div>
@@ -103,7 +104,7 @@ export default function Home() {
                   id="HEADLINE11"
                   className="ladi-element ladi-animation-hidden"
                 >
-                  <h2 className="ladi-headline ladi-lazyload">TUẤN NGUYỄN</h2>
+                  <h2 className="ladi-headline ladi-lazyload">TUẤN ANH</h2>
                 </div>
               </div>
             </div>
@@ -128,7 +129,7 @@ export default function Home() {
                   id="HEADLINE14"
                   className="ladi-element ladi-animation-hidden"
                 >
-                  <h2 className="ladi-headline ladi-lazyload">HUYỀN LÊ</h2>
+                  <h2 className="ladi-headline ladi-lazyload">LAN ANH</h2>
                 </div>
               </div>
             </div>
@@ -175,7 +176,9 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE20" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    Mẹ. Lê Thị Thành
+                    Bố. Phạm Quang Chiểu
+                    <br />
+                    Mẹ. Phạm Thị Lương
                   </h2>
                 </div>
               </div>
@@ -194,9 +197,9 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE17" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    Bố. Nguyễn Minh Thắng
+                    Bố. Nguyễn Tố Huynh
                     <br />
-                    Mẹ. Đào Thị Kim Tuyến
+                    Mẹ. An Thị Hải
                   </h2>
                 </div>
               </div>
