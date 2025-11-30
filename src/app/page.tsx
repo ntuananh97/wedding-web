@@ -219,13 +219,13 @@ export default function Home() {
             </div>
             <div id="HEADLINE22" className="ladi-element ladi-animation-hidden">
               <h3 className="ladi-headline ladi-lazyload">
-                Chateau St. Havel
+                Ngũ Hùng
                 <br />
               </h3>
             </div>
             <div id="HEADLINE23" className="ladi-element ladi-animation-hidden">
               <h2 className="ladi-headline ladi-lazyload">
-                Před Nádražím 1/6, Praha 4
+                Thanh Miện, Hải Phòng
               </h2>
             </div>
             <div id="HEADLINE24" className="ladi-element ladi-animation-hidden">
@@ -234,14 +234,14 @@ export default function Home() {
               </h2>
             </div>
             <div id="HEADLINE25" className="ladi-element ladi-animation-hidden">
-              <h2 className="ladi-headline ladi-lazyload">11:00</h2>
+              <h2 className="ladi-headline ladi-lazyload">10:00</h2>
             </div>
             <a
-              href="https://maps.app.goo.gl/sTvRuYtThtCf274k9"
+              href="https://maps.app.goo.gl/EzSR13VdnS4ccP3S6"
               target="_blank"
               id="GROUP30"
               className="ladi-element"
-              data-replace-href="https://maps.app.goo.gl/sTvRuYtThtCf274k9"
+              data-replace-href="https://maps.app.goo.gl/EzSR13VdnS4ccP3S6"
             >
               <div className="ladi-group">
                 <div id="IMAGE9" className="ladi-element">
@@ -268,17 +268,17 @@ export default function Home() {
                     <div className="ladi-line-container" />
                   </div>
                 </div>
-                <div id="HEADLINE26" className="ladi-element">
-                  <h2 className="ladi-headline ladi-lazyload">Sobota</h2>
-                </div>
+                {/* <div id="HEADLINE26" className="ladi-element">
+                  <h2 className="ladi-headline ladi-lazyload">Ngũ Hùng</h2>
+                </div> */}
                 <div id="HEADLINE27" className="ladi-element">
-                  <h2 className="ladi-headline ladi-lazyload">16.08.2025</h2>
+                  <h2 className="ladi-headline ladi-lazyload">21.12.2025</h2>
                 </div>
-                <div id="LINE4" className="ladi-element">
+                {/* <div id="LINE4" className="ladi-element">
                   <div className="ladi-line">
                     <div className="ladi-line-container" />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div id="GROUP33" className="ladi-element">
@@ -305,7 +305,7 @@ export default function Home() {
             </div>
             <div id="HEADLINE29" className="ladi-element ladi-animation-hidden">
               <h3 className="ladi-headline ladi-lazyload">
-                August
+                December
                 <br />
               </h3>
             </div>

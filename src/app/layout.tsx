@@ -4,9 +4,7 @@ import "./styles/css2.css";
 import "./styles/ladi.css";
 import "./styles/page.css";
 import "./styles/element.css";
-// import "./js/ladipage.formdata.min.js.download";
-// import "./js/ladipagev3.min.js.download";
-import Script from "next/script";
+
 import { eventData } from "./eventData";
 
 const geistSans = Geist({
@@ -37,47 +35,22 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="Expires" content="-1" />
         <meta name="keywords" content="" />
-        <meta name="description" content="Đám cưới Tuấn Nguyễn & Huyền Lê" />
+        <meta name="description" content="Đám cưới Tuấn Anh &amp; Lan Anh" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           id="viewport"
           name="viewport"
           content="width=420,user-scalable=no,initial-scale=3.657142857142857,minimum-scale=3.657142857142857,maximum-scale=3.657142857142857"
         />
-        <link rel="canonical" href="https://camcui.vn/tuanhuyennn" />
-        <meta property="og:url" content="https://camcui.vn/tuanhuyennn" />
-        <meta property="og:title" content="Đám cưới Tuấn Nguyễn & Huyền Lê" />
+        <meta property="og:title" content="Đám cưới Tuấn Anh &amp; Lan Anh" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content="https://static.ladipage.net/6322a62f2dad980013bb5005/508445378_1281875497280711_1109684595019462715_n-20250719105331-yjczc.jpg"
-        />
+       
         <meta
           property="og:description"
-          content="Đám cưới Tuấn Nguyễn & Huyền Lê"
+          content="Đám cưới Tuấn Anh & Lan Anh"
         />
         <meta name="format-detection" content="telephone=no" />
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href="https://static.ladipage.net/6322a62f2dad980013bb5005/untitled-1-20250409032644-v_4bn.png"
-        />
-        <link
-          rel="shortcut icon"
-          href="https://static.ladipage.net/6322a62f2dad980013bb5005/untitled-1-20250409032644-v_4bn.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="https://static.ladipage.net/6322a62f2dad980013bb5005/untitled-1-20250409032644-v_4bn.png"
-        />
-        <link
-          rel="apple-touch-icon-precomposed"
-          href="https://static.ladipage.net/6322a62f2dad980013bb5005/untitled-1-20250409032644-v_4bn.png"
-        />
-        <meta
-          name="msapplication-TileImage"
-          content="https://static.ladipage.net/6322a62f2dad980013bb5005/untitled-1-20250409032644-v_4bn.png"
-        />
+      
         <meta name="revisit-after" content="days" />
         <link rel="dns-prefetch" />
         <link
@@ -90,28 +63,9 @@ export default function RootLayout({
           href="https://fonts.gstatic.com/"
           crossOrigin=""
         />
-        <link rel="preconnect" href="https://w.ladicdn.com/" crossOrigin="" />
-        <link rel="preconnect" href="https://s.ladicdn.com/" crossOrigin="" />
-        <link
-          rel="preconnect"
-          href="https://api1.ldpform.com/"
-          crossOrigin=""
-        />
-        <link rel="preconnect" href="https://a.ladipage.com/" crossOrigin="" />
-        <link
-          rel="preconnect"
-          href="https://api.sales.ldpform.net/"
-          crossOrigin=""
-        />
+       
         
-        <Script
-        src="/js/ladipagev3.min.js"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="/js/ladipage.formdata.min.js"
-        strategy="beforeInteractive"
-      />
+       
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -915,7 +915,8 @@
 
 #HEADLINE27 {
     top: 13.5px;
-    left: 126px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #LINE4 {
