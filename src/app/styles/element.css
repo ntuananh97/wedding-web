@@ -29,8 +29,8 @@
 }
 
 #BOX1>.ladi-box {
-    background-image: url("/images/_DAT1220.jpg");
-    background-size: contain;
+    background-image: url("/images/_DAT1220.webp");
+    background-size: cover;
     background-origin: content-box;
     background-position: top;
     background-repeat: no-repeat;
@@ -462,7 +462,7 @@
 }
 
 #BOX3>.ladi-box {
-    background-image: url("/images/_DAT1137.jpg");
+    background-image: url("/images/_DAT1137.webp");
     background-size: cover;
     background-origin: content-box;
     background-position: 50% 0%;
@@ -585,7 +585,7 @@
 }
 
 #BOX6>.ladi-box {
-    background-image: url("/images/_DAT0887.jpg");
+    background-image: url("/images/_DAT0887.webp");
         background-size: cover;
     background-origin: content-box;
     background-position: 50% 0%;
@@ -601,7 +601,7 @@
 }
 
 #BOX7>.ladi-box {
-    background-image: url("/images/_DAT0818.jpg");
+    background-image: url("/images/_DAT0818.webp");
     background-size: contain;
     background-origin: content-box;
     background-position: 50% 50%;
@@ -969,10 +969,10 @@
 }
 
 #BOX8>.ladi-box {
-    background-image: url("/images/_DAT1402.jpg");
+    background-image: url("/images/_DAT1402.webp");
     background-size: cover;
     background-origin: content-box;
-    background-position: 50% 0%;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     filter: brightness(60%);
@@ -1901,8 +1901,8 @@
 }
 
 #BOX14>.ladi-box {
-    background-image: url("/images/_DAT1644.jpg");
-    background-size: contain;
+    background-image: url("/images/_DAT1644.webp");
+    background-size: cover;
     background-origin: content-box;
     background-position: 50% 0%;
     background-repeat: repeat;
@@ -1924,7 +1924,7 @@
 }
 
 #BOX15>.ladi-box {
-    background-image: url("/images/_DAT0430.jpg");
+    background-image: url("/images/_DAT0430.webp");
     background-size: cover;
     background-origin: content-box;
     background-position: 50% 50%;
@@ -1961,7 +1961,7 @@
 }
 
 #BOX16>.ladi-box {
-    background-image: url("/images/_DAT0552.jpg");
+    background-image: url("/images/_DAT0552.webp");
     background-size: cover;
     background-origin: content-box;
     background-position: 50% 0%;
@@ -1975,7 +1975,7 @@
 }
 
 #BOX17>.ladi-box {
-    background-image: url("/images/_DAT0672.jpg");
+    background-image: url("/images/_DAT0672.webp");
     background-size: cover;
     background-origin: content-box;
     background-position: 50% 0%;
@@ -1991,7 +1991,7 @@
 }
 
 #BOX18>.ladi-box {
-    background-image: url("/images/_DAT0844.jpg");
+    background-image: url("/images/_DAT0844.webp");
     background-size: cover;
     background-origin: content-box;
     background-position: 50% 50%;
@@ -2085,11 +2085,11 @@
 }
 
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-    background-image: url("/images/_DAT1607.jpg");
+    background-image: url("/images/_DAT1607.webp");
 }
 
 #GALLERY1 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-    background-image: url("/images/_DAT1607.jpg");
+    background-image: url("/images/_DAT1607.webp");
 }
 
 #GALLERY1 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
@@ -2436,7 +2436,7 @@
 }
 
 #BOX22>.ladi-box {
-    background-image: url("/images/_DAT1273.jpg");
+    background-image: url("/images/_DAT1273.webp");
     background-size: cover;
     background-origin: content-box;
     background-position: 50% 50%;
