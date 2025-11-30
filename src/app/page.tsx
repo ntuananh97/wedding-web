@@ -1027,7 +1027,7 @@ export default function Home() {
               className="ladi-element ladi-animation-hidden"
             >
               <p className="ladi-headline ladi-lazyload">
-                Hãy xác nhận sự có mặt của bạn trước ngày 01.08.2025 để chúng
+                Hãy xác nhận sự có mặt của bạn để chúng
                 mình chuẩn bị đón tiếp một cách chu đáo nhất.
                 <br />
                 Trân trọng!&nbsp;
