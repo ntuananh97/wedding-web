@@ -1857,8 +1857,9 @@ a:link {
 }
 
 .ladi-animation-hidden {
-    visibility: hidden !important;
+    /* visibility: hidden !important; */
     opacity: 0 !important;
+    will-change: opacity, transform;
 }
 
 .element-click-selected {

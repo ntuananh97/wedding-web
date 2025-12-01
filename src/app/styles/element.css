@@ -220,6 +220,7 @@
     animation-delay: 1s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #GROUP39 {
@@ -488,6 +489,7 @@
     animation-delay: 1s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #GROUP1 {
@@ -508,6 +510,7 @@
     animation-delay: 1s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #HEADLINE9,
@@ -616,6 +619,7 @@
     animation-delay: 1s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #HEADLINE115 {
@@ -1405,6 +1409,7 @@
     animation-delay: 0.5s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #BOX10 {
@@ -1421,6 +1426,7 @@
     animation-delay: 0.7s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #BOX11 {
@@ -1455,6 +1461,7 @@
     animation-delay: 1.3s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #BOX13 {
@@ -1471,6 +1478,7 @@
     animation-delay: 1.5s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #IMAGE12,
@@ -1950,6 +1958,7 @@
     animation-delay: 1s;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
 #BOX16,

@@ -17,9 +17,15 @@ export const useScrollAnimation = () => {
               element.classList.add('ladi-animation');
               
               // Sau 200ms mới xoá ladi-animation-hidden
-              setTimeout(() => {
+              // setTimeout(() => {
+              //   element.classList.remove('ladi-animation-hidden');
+              // }, 1000);
+
+              requestAnimationFrame(() => {
+                // Dùng requestAnimationFrame để đảm bảo browser đã sẵn sàng render frame mới
                 element.classList.remove('ladi-animation-hidden');
-              }, 1000);
+                element.classList.add('ladi-animation');
+            });
 
                // Xử lý lazyload - xoá ngay lập tức
             if (element.classList.contains('ladi-lazyload')) {
@@ -32,7 +38,7 @@ export const useScrollAnimation = () => {
           });
         },
         {
-          threshold: 0, // Trigger khi 10% element xuất hiện
+          threshold: 0.1, // Trigger khi 10% element xuất hiện
           rootMargin: '0px' // Có thể điều chỉnh để trigger sớm hơn
         }
       );
