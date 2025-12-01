@@ -2,6 +2,7 @@
 import AudioPlayer from "./components/AudioPlayer";
 import Calendar from "./components/Calendar";
 import ClickMusic from "./components/ClickMusic";
+import Slider from "./components/Slider";
 import { useScrollAnimation } from "./hooks/useScrollAnimation";
 
 export default function Home() {
@@ -657,132 +658,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="SECTION8" className="ladi-section">
-          <div className="ladi-section-background ladi-lazyload" />
-          <div className="ladi-container">
-            <div id="IMAGE25" className="ladi-element">
-              <div className="ladi-image">
-                <div className="ladi-image-background ladi-lazyload" />
-              </div>
-            </div>
-            <div
-              id="GALLERY1"
-              className="ladi-element"
-              data-max-item={10}
-              data-runtime-id="aCvfEkJrOH"
-              data-current={0}
-              data-is-next="true"
-              data-scrolled="false"
-              data-loaded="true"
-            >
-              <div className="ladi-gallery ladi-gallery-bottom">
-                <div
-                  className="ladi-gallery-view"
-                  style={{ cursor: "pointer" }}
-                >
-                  <div className="ladi-gallery-view-arrow ladi-gallery-view-arrow-left" />
-                  <div className="ladi-gallery-view-arrow ladi-gallery-view-arrow-right" />
-                  <div
-                    className="ladi-gallery-view-item selected ladi-lazyload"
-                    data-index={0}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={1}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={2}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={3}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={4}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={5}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={6}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={7}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={8}
-                  />
-                  <div
-                    className="ladi-gallery-view-item ladi-lazyload"
-                    data-index={9}
-                  />
-                </div>
-                <div className="ladi-gallery-control">
-                  <div className="ladi-gallery-control-box">
-                    <div
-                      className="ladi-gallery-control-item selected ladi-lazyload"
-                      data-index={0}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={1}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={2}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={3}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={4}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={5}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={6}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={7}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={8}
-                    />
-                    <div
-                      className="ladi-gallery-control-item ladi-lazyload"
-                      data-index={9}
-                    />
-                  </div>
-                  <div className="ladi-gallery-control-arrow ladi-gallery-control-arrow-left opacity-0" />
-                  <div className="ladi-gallery-control-arrow ladi-gallery-control-arrow-right" />
-                </div>
-              </div>
-            </div>
-            <div
-              id="HEADLINE122"
-              className="ladi-element ladi-animation-hidden"
-            >
-              <h2 className="ladi-headline ladi-lazyload">
-                Từng tấm ảnh là một lát cắt thời gian đầy cảm xúc – tất cả hòa
-                quyện tạo nên bản giao hưởng ngọt ngào của tình yêu, niềm vui và
-                những kỷ niệm mà chúng ta sẽ mãi nâng niu suốt cuộc đời.
-              </h2>
-            </div>
-          </div>
-        </div>
+        <Slider />
         <div id="SECTION7" className="ladi-section">
           <div className="ladi-section-background ladi-lazyload" />
           <div className="ladi-container">
