@@ -971,6 +971,7 @@
 
 #BOX8>.ladi-box {
     background-image: url("/images/_DAT1402.webp");
+    background-color: black;
     background-size: cover;
     background-origin: content-box;
     background-position: top center;
@@ -1036,7 +1037,7 @@
 
 #HEADLINE31 {
     top: 150.95px;
-    left: 249px;
+    left: 38px;
 }
 
 #HEADLINE31>.ladi-headline,
@@ -1068,6 +1069,7 @@
 #HEADLINE65>.ladi-headline,
 #HEADLINE66>.ladi-headline,
 #HEADLINE67>.ladi-headline,
+#HEADLINE46>.ladi-headline,
 #HEADLINE68>.ladi-headline {
     font-family: TESQSSRUdVTEFSLlRURg;
     font-size: 13px;
@@ -1078,77 +1080,77 @@
 
 #HEADLINE32 {
     top: 150.95px;
-    left: 301.75px;
+    left: 90.75px;
 }
 
 #HEADLINE33 {
     top: 150.95px;
-    left: 354.5px;
-}
-
-#HEADLINE34 {
-    top: 187.95px;
-    left: 38px;
-}
-
-#HEADLINE35 {
-    top: 187.95px;
-    left: 90.75px;
-}
-
-#HEADLINE36 {
-    top: 187.95px;
     left: 143.5px;
 }
 
-#HEADLINE37 {
-    top: 187.95px;
+#HEADLINE34 {
+    top: 150.95px;
     left: 196.25px;
+}
+
+#HEADLINE35 {
+    top: 150.95px;
+    left: 249px;
+}
+
+#HEADLINE36 {
+    top: 150.95px;
+    left: 301.75px;
+}
+
+#HEADLINE37 {
+    top: 150.95px;
+    left: 354.5px;
 }
 
 #HEADLINE38 {
     top: 187.95px;
-    left: 249px;
+    left: 38px;
 }
 
 #HEADLINE39 {
     top: 187.95px;
-    left: 301.75px;
+    left: 90.75px;
 }
 
 #HEADLINE40 {
     top: 187.95px;
-    left: 354.5px;
-}
-
-#HEADLINE41 {
-    top: 224.95px;
-    left: 38px;
-}
-
-#HEADLINE42 {
-    top: 224.95px;
-    left: 90.75px;
-}
-
-#HEADLINE43 {
-    top: 224.95px;
     left: 143.5px;
 }
 
-#HEADLINE44 {
-    top: 224.95px;
+#HEADLINE41 {
+    top: 187.95px;
     left: 196.25px;
+}
+
+#HEADLINE42 {
+    top: 187.95px;
+    left: 249px;
+}
+
+#HEADLINE43 {
+    top: 187.95px;
+    left: 301.75px;
+}
+
+#HEADLINE44 {
+    top: 187.95px;
+    left: 354.5px;
 }
 
 #HEADLINE45 {
     top: 224.95px;
-    left: 249px;
+    left: 38px;
 }
 
 #HEADLINE47 {
     top: 301.95px;
-    left: 352px;
+    left: 143.5px;
 }
 
 #HEADLINE48,
@@ -1213,72 +1215,72 @@
 
 #HEADLINE55 {
     top: 261.95px;
-    left: 354.5px;
-}
-
-#HEADLINE56 {
-    top: 301.95px;
-    left: 38px;
-}
-
-#HEADLINE57 {
-    top: 301.95px;
-    left: 90.75px;
-}
-
-#HEADLINE58 {
-    top: 301.95px;
     left: 143.5px;
 }
 
-#HEADLINE59 {
-    top: 301.95px;
+#HEADLINE56 {
+    top: 261.95px;
     left: 196.25px;
+}
+
+#HEADLINE57 {
+    top: 261.95px;
+    left: 249px;
+}
+
+#HEADLINE58 {
+    top: 261.95px;
+    left: 301.75px;
+}
+
+#HEADLINE59 {
+    top: 261.95px;
+    left: 354.5px;
 }
 
 #HEADLINE60 {
     top: 301.95px;
-    left: 249px;
+    left: 38px;
 }
 
 #HEADLINE61 {
     top: 301.95px;
-    left: 301.75px;
+    left: 90.75px;
 }
 
 #HEADLINE62 {
     top: 224.95px;
-    left: 354.5px;
-}
-
-#HEADLINE63 {
-    top: 261.95px;
-    left: 38px;
-}
-
-#HEADLINE64 {
-    top: 261.95px;
-    left: 90.75px;
-}
-
-#HEADLINE65 {
-    top: 261.95px;
     left: 143.5px;
 }
 
-#HEADLINE66 {
-    top: 261.95px;
+#HEADLINE63 {
+    top: 224.95px;
     left: 196.25px;
+}
+
+#HEADLINE64 {
+    top: 224.95px;
+    left: 249px;
+}
+
+#HEADLINE65 {
+    top: 224.95px;
+    left: 301.75px;
+}
+
+#HEADLINE66 {
+    top: 224.95px;
+    left: 354.5px;
 }
 
 #HEADLINE67 {
     top: 261.95px;
-    left: 249px;
+    left: 38px;
 }
 
 #HEADLINE68 {
     top: 261.95px;
-    left: 301.75px;
+    left: 90.75px;
 }
 
 #IMAGE11,
@@ -1289,7 +1291,7 @@
 
 #IMAGE11 {
     top: 221.95px;
-    left: 299.562px;
+    left: 351.5px;
 }
 
 #IMAGE11>.ladi-image>.ladi-image-background {
@@ -1309,10 +1311,10 @@
 
 #HEADLINE46 {
     top: 224.95px;
-    left: 301.75px;
+    left: 90.75px;
 }
 
-#HEADLINE46>.ladi-headline {
+#HEADLINE66>.ladi-headline {
     font-family: TESQSSRUdVTEFSLlRURg;
     font-size: 13px;
     line-height: 1.6;
