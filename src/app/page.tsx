@@ -381,7 +381,7 @@ export default function Home() {
                 <br />
               </h3>
             </div>
-            <div id="GROUP16" className="ladi-element ladi-animation-hidden">
+            {/* <div id="GROUP16" className="ladi-element ladi-animation-hidden">
               <div className="ladi-group">
                 <div id="HEADLINE82" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
@@ -399,22 +399,22 @@ export default function Home() {
                   </h2>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div id="GROUP18" className="ladi-element ladi-animation-hidden">
               <div className="ladi-group">
                 <div id="HEADLINE85" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    19:30
+                    16:00
                   </h2>
                 </div>
                 <div id="HEADLINE86" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    TIỆC TỐI
+                    TIỆC CƯỚI
                   </h2>
                 </div>
                 <div id="HEADLINE87" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    DINNER
+                    NHÀ NỮ
                   </h2>
                 </div>
               </div>
@@ -423,17 +423,17 @@ export default function Home() {
               <div className="ladi-group">
                 <div id="HEADLINE88" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    21:00
+                    09:00
                   </h2>
                 </div>
                 <div id="HEADLINE89" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    tung HOA
+                    Chụp ảnh
                   </h2>
                 </div>
                 <div id="HEADLINE90" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    BOUQUET TOSS
+                    Photo
                   </h2>
                 </div>
               </div>
@@ -442,26 +442,26 @@ export default function Home() {
               <div className="ladi-group">
                 <div id="HEADLINE91" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    21:30
+                    10:00
                   </h2>
                 </div>
                 <div id="HEADLINE92" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    BƯỚC NHẢY ĐẦU TIÊN
+                    Lễ cưới
                   </h2>
                 </div>
                 <div id="HEADLINE93" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    FIRST DANCE
+                    NHÀ NỮ
                   </h2>
                 </div>
               </div>
             </div>
-            <div id="GROUP21" className="ladi-element ladi-animation-hidden">
+            {/* <div id="GROUP21" className="ladi-element ladi-animation-hidden">
               <div className="ladi-group">
                 <div id="HEADLINE94" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    22:30
+                    10:00
                   </h2>
                 </div>
                 <div id="HEADLINE95" className="ladi-element">
@@ -470,7 +470,7 @@ export default function Home() {
                   </h2>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div id="IMAGE17" className="ladi-element ladi-animation-hidden">
               <div className="ladi-image">
                 <div className="ladi-image-background ladi-lazyload" />
@@ -486,7 +486,7 @@ export default function Home() {
                 <div className="ladi-image-background ladi-lazyload" />
               </div>
             </div>
-            <div id="GROUP22" className="ladi-element ladi-animation-hidden">
+            {/* <div id="GROUP22" className="ladi-element ladi-animation-hidden">
               <div className="ladi-group">
                 <div id="IMAGE20" className="ladi-element">
                   <div className="ladi-image">
@@ -499,7 +499,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div id="LINE6" className="ladi-element">
               <div className="ladi-line">
                 <div className="ladi-line-container" />
@@ -514,17 +514,17 @@ export default function Home() {
               <div className="ladi-group">
                 <div id="HEADLINE70" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    11:30
+                    16:00
                   </h2>
                 </div>
                 <div id="HEADLINE71" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    LỄ VOW
+                    TIỆC CƯỚI
                   </h2>
                 </div>
                     <div id="HEADLINE72" className="ladi-element">
                       <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                        CEREMONY
+                        NHÀ TRAI
                       </h2>
                     </div>
               </div>
@@ -533,7 +533,7 @@ export default function Home() {
               <div className="ladi-group">
                 <div id="HEADLINE73" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    12:15
+                    09:00
                   </h2>
                 </div>
                 <div id="HEADLINE74" className="ladi-element">
@@ -543,7 +543,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE75" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    PHOTO SESSION
+                    PHOTO
                   </h2>
                 </div>
               </div>
@@ -552,17 +552,17 @@ export default function Home() {
               <div className="ladi-group">
                 <div id="HEADLINE79" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    14:30
+                    10:00
                   </h2>
                 </div>
                 <div id="HEADLINE80" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    CẮT BÁNH
+                    Lễ CƯỚI
                   </h2>
                 </div>
                 <div id="HEADLINE81" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    CAKE CUTTING
+                    NHÀ TRAI
                   </h2>
                 </div>
               </div>
@@ -572,7 +572,7 @@ export default function Home() {
                 <div className="ladi-image-background ladi-lazyload" />
               </div>
             </div>
-            <div id="GROUP57" className="ladi-element">
+            {/* <div id="GROUP57" className="ladi-element">
               <div className="ladi-group">
                 <div
                   id="GROUP13"
@@ -605,7 +605,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div id="IMAGE16" className="ladi-element ladi-animation-hidden">
               <div className="ladi-image">
                 <div className="ladi-image-background ladi-lazyload" />

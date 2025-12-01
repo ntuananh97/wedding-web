@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Đám cưới Tuấn Anh &amp; Lan Anh",
+  title: "Đám cưới Tuấn Anh - Lan Anh",
   description: "HiHi",
 };
 
@@ -35,14 +35,14 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta httpEquiv="Expires" content="-1" />
         <meta name="keywords" content="" />
-        <meta name="description" content="Đám cưới Tuấn Anh &amp; Lan Anh" />
+        <meta name="description" content="Đám cưới Tuấn Anh - Lan Anh" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           id="viewport"
           name="viewport"
           content="width=420,user-scalable=no,initial-scale=3.657142857142857,minimum-scale=3.657142857142857,maximum-scale=3.657142857142857"
         />
-        <meta property="og:title" content="Đám cưới Tuấn Anh &amp; Lan Anh" />
+        <meta property="og:title" content="Đám cưới Tuấn Anh - Lan Anh" />
         <meta property="og:type" content="website" />
        
         <meta

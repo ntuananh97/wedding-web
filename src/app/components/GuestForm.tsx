@@ -313,33 +313,33 @@ const GuestForm = () => {
                 <div className="ladi-box ladi-transition ladi-lazyload" />
               </div>
               <div id="GROUP35" className="ladi-element">
-                <div className="ladi-group">
+                <div className="">
                   <div
                     id="GROUP36"
                     className="ladi-element ladi-animation-hidden"
                   >
-                    <div className="ladi-group">
+                    <div className="">
                       <div id="BOX26" className="ladi-element">
-                        <div className="ladi-box ladi-transition ladi-lazyload" />
+                        <div className="ladi-box ladi-transition " />
                       </div>
                       <div id="IMAGE38" className="ladi-element">
                         <div className="ladi-image">
-                          <div className="ladi-image-background ladi-lazyload" />
+                          <div className="ladi-image-background " />
                         </div>
                       </div>
                       <div id="HEADLINE130" className="ladi-element">
-                        <h3 className="ladi-headline ladi-lazyload">
-                          Le Thanh Huyen
+                        <h3 className="ladi-headline ">
+                          Nguyen Tuan Anh
                         </h3>
                       </div>
                       <div id="HEADLINE131" className="ladi-element">
-                        <h3 className="ladi-headline ladi-lazyload">
-                          Techcombank
+                        <h3 className="ladi-headline ">
+                          Vietcombank
                         </h3>
                       </div>
                       <div id="HEADLINE132" className="ladi-element">
-                        <h3 className="ladi-headline ladi-lazyload">
-                          190355172770181
+                        <h3 className="ladi-headline ">
+                          9971223496
                         </h3>
                       </div>
                     </div>
@@ -348,28 +348,28 @@ const GuestForm = () => {
                     id="GROUP37"
                     className="ladi-element ladi-animation-hidden"
                   >
-                    <div className="ladi-group">
+                    <div className="">
                       <div id="BOX27" className="ladi-element">
-                        <div className="ladi-box ladi-transition ladi-lazyload" />
+                        <div className="ladi-box ladi-transition " />
                       </div>
                       <div id="IMAGE39" className="ladi-element">
                         <div className="ladi-image">
-                          <div className="ladi-image-background ladi-lazyload" />
+                          <div className="ladi-image-background " />
                         </div>
                       </div>
                       <div id="HEADLINE133" className="ladi-element">
-                        <h3 className="ladi-headline ladi-lazyload">
-                          Nguyen Minh Tuan
+                        <h3 className="ladi-headline ">
+                          Pham Thi Lan Anh
                         </h3>
                       </div>
                       <div id="HEADLINE134" className="ladi-element">
-                        <h3 className="ladi-headline ladi-lazyload">
+                        <h3 className="ladi-headline ">
                           Vietcombank
                         </h3>
                       </div>
                       <div id="HEADLINE135" className="ladi-element">
-                        <h3 className="ladi-headline ladi-lazyload">
-                          1903551727701123
+                        <h3 className="ladi-headline ">
+                          0691000437155
                         </h3>
                       </div>
                     </div>
