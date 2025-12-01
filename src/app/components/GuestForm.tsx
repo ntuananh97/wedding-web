@@ -5,41 +5,32 @@ const GuestForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    console.log("Form submitted!");
     
+    // Optional: You can add form data processing here
+    const formData = new FormData(e.currentTarget);
+  
     // Show the backdrop
     const backdrop = document.querySelector(".backdrop-popup");
-    console.log("Backdrop element:", backdrop);
     if (backdrop) {
       const backdropEl = backdrop as HTMLElement;
       backdropEl.style.display = "block";
       backdropEl.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-      console.log("Backdrop displayed");
     } else {
       console.error("Backdrop not found!");
     }
     
     // Show the popup
     const popup = document.getElementById("POPUP1");
-    console.log("Popup element:", popup);
     if (popup) {
       popup.style.display = "block";
       popup.style.top = "0px";
       popup.style.left = "0px";
-      console.log("Popup displayed");
     } else {
       console.error("Popup not found!");
     }
     
-    // Optional: You can add form data processing here
-    const formData = new FormData(e.currentTarget);
-    console.log("Form data:", {
-      name: formData.get("name"),
-      message: formData.get("message"),
-      attendance: formData.get("form_item7"),
-      guests: formData.get("form_item8"),
-      invitedBy: formData.get("form_item9"),
-    });
+    // Reset the form after submission
+    e.currentTarget.reset();
   };
 
   const closePopup = () => {
@@ -57,7 +48,6 @@ const GuestForm = () => {
   };
 
   const showPopup2 = () => {
-    console.log("Opening POPUP2");
     
     // Show the backdrop
     const backdrop = document.querySelector(".backdrop-popup");
@@ -65,19 +55,16 @@ const GuestForm = () => {
       const backdropEl = backdrop as HTMLElement;
       backdropEl.style.display = "block";
       backdropEl.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-      console.log("Backdrop displayed for POPUP2");
     } else {
       console.error("Backdrop not found!");
     }
     
     // Show POPUP2
     const popup2 = document.getElementById("POPUP2");
-    console.log("POPUP2 element:", popup2);
     if (popup2) {
       popup2.style.display = "block";
       popup2.style.top = "0px";
       popup2.style.left = "0px";
-      console.log("POPUP2 displayed");
     } else {
       console.error("POPUP2 not found!");
     }

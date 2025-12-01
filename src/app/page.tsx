@@ -68,7 +68,7 @@ export default function Home() {
               </h2>
             </div>
             <div id="HEADLINE6" className="ladi-element ladi-animation">
-              <h2 className="ladi-headline ladi-lazyload">Svatební pozvánka</h2>
+              <h2 className="ladi-headline ladi-lazyload">Wedding Invitation</h2>
             </div>
             <div id="LINE1" className="ladi-element">
               <div className="ladi-line">
@@ -82,7 +82,7 @@ export default function Home() {
             </div>
             <div id="HEADLINE8" className="ladi-element ladi-animation-hidden">
               <h2 className="ladi-headline ladi-lazyload">
-                Srdečně Vás zveme na náš významný den
+                We cordially invite you to our special day
               </h2>
             </div>
             <div id="BOX3" className="ladi-element ladi-animation-hidden">
@@ -103,7 +103,7 @@ export default function Home() {
                   id="HEADLINE10"
                   className="ladi-element ladi-animation-hidden"
                 >
-                  <h2 className="ladi-headline ladi-lazyload">Ženich</h2>
+                  <h2 className="ladi-headline ladi-lazyload">Groom</h2>
                 </div>
                 <div
                   id="HEADLINE11"
@@ -128,7 +128,7 @@ export default function Home() {
                   id="HEADLINE13"
                   className="ladi-element ladi-animation-hidden"
                 >
-                  <h2 className="ladi-headline ladi-lazyload">Nevěsta</h2>
+                  <h2 className="ladi-headline ladi-lazyload">Bride</h2>
                 </div>
                 <div
                   id="HEADLINE14"
@@ -176,7 +176,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE19" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    Nevěstina rodina
+                    Bride's Family
                   </h2>
                 </div>
                 <div id="HEADLINE20" className="ladi-element">
@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE16" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    Ženichova rodina
+                    Groom's Family
                   </h2>
                 </div>
                 <div id="HEADLINE17" className="ladi-element">
@@ -217,7 +217,7 @@ export default function Home() {
             <div id="HEADLINE21" className="ladi-element ladi-animation-hidden">
               <h2 className="ladi-headline ladi-lazyload">
                 Được tổ chức tại -{" "}
-                <span style={{ fontStyle: "italic" }}>Koná se v</span>
+                <span style={{ fontStyle: "italic" }}>Taking place at</span>
               </h2>
             </div>
             <div id="HEADLINE22" className="ladi-element ladi-animation-hidden">
@@ -233,7 +233,7 @@ export default function Home() {
             </div>
             <div id="HEADLINE24" className="ladi-element ladi-animation-hidden">
               <h2 className="ladi-headline ladi-lazyload">
-                Vào lúc - <span style={{ fontStyle: "italic" }}>V čase</span>
+                Vào lúc - <span style={{ fontStyle: "italic" }}>At time</span>
               </h2>
             </div>
             <div id="HEADLINE25" className="ladi-element ladi-animation-hidden">
@@ -254,7 +254,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE28" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    CHỈ ĐƯỜNG - Navigace
+                    CHỈ ĐƯỜNG - Navigation
                   </h2>
                 </div>
               </div>
@@ -395,7 +395,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE84" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    VOLNÁ ZÁBAVA
+                    FREE TIME ACTIVITIES
                   </h2>
                 </div>
               </div>
@@ -414,7 +414,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE87" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    VEČEŘE
+                    DINNER
                   </h2>
                 </div>
               </div>
@@ -433,7 +433,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE90" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    HÁZENÍ KYTIC
+                    BOUQUET TOSS
                   </h2>
                 </div>
               </div>
@@ -452,7 +452,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE93" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    PRVNÍ TANEC
+                    FIRST DANCE
                   </h2>
                 </div>
               </div>
@@ -522,11 +522,11 @@ export default function Home() {
                     LỄ VOW
                   </h2>
                 </div>
-                <div id="HEADLINE72" className="ladi-element">
-                  <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    OBŘAD
-                  </h2>
-                </div>
+                    <div id="HEADLINE72" className="ladi-element">
+                      <h2 className="ladi-headline ladi-transition ladi-lazyload">
+                        CEREMONY
+                      </h2>
+                    </div>
               </div>
             </div>
             <div id="GROUP12" className="ladi-element ladi-animation-hidden">
@@ -543,7 +543,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE75" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    FOCENÍ
+                    PHOTO SESSION
                   </h2>
                 </div>
               </div>
@@ -562,7 +562,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE81" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    KRÁJENÍ DORTŮ
+                    CAKE CUTTING
                   </h2>
                 </div>
               </div>
@@ -591,7 +591,7 @@ export default function Home() {
                     </div>
                     <div id="HEADLINE78" className="ladi-element">
                       <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                        OBĚD
+                        LUNCH
                       </h2>
                     </div>
                   </div>
@@ -789,11 +789,6 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE136" className="ladi-element">
                   <ClickMusic />
-
-                  {/* <p className="ladi-headline">
-                    click music
-                    <br />
-                  </p> */}
                 </div>
                 <div id="IMAGE41" className="ladi-element">
                   <div className="ladi-image">
