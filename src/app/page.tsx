@@ -1,7 +1,7 @@
 'use client';
-import AudioPlayer from "./components/AudioPlayer";
 import Calendar from "./components/Calendar";
 import ClickMusic from "./components/ClickMusic";
+import CountDown from "./components/CountDown";
 import GuestForm from "./components/GuestForm";
 import Slider from "./components/Slider";
 import { useScrollAnimation } from "./hooks/useScrollAnimation";
@@ -176,7 +176,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE19" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    Bride's Family
+                    Bride&apos;s Family
                   </h2>
                 </div>
                 <div id="HEADLINE20" className="ladi-element">
@@ -197,7 +197,7 @@ export default function Home() {
                 </div>
                 <div id="HEADLINE16" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    Groom's Family
+                    Groom&apos;s Family
                   </h2>
                 </div>
                 <div id="HEADLINE17" className="ladi-element">
@@ -691,77 +691,7 @@ export default function Home() {
                 <br />
               </h3>
             </div>
-            <div id="GROUP29" className="ladi-element">
-              <div className="ladi-group">
-                <div
-                  id="COUNTDOWN1"
-                  className="ladi-element"
-                  data-type="endtime"
-                  data-endtime={1755277200000}
-                  data-date-start={0}
-                  data-date-end={1755277200000}
-                  data-end="true"
-                >
-                  <div className="ladi-countdown">
-                    <div
-                      id="COUNTDOWN_ITEM1"
-                      className="ladi-element"
-                      data-item-type="day"
-                    >
-                      <div className="ladi-countdown-background ladi-lazyload" />
-                      <div className="ladi-countdown-text">
-                        <span>00</span>
-                      </div>
-                    </div>
-                    <div
-                      id="COUNTDOWN_ITEM2"
-                      className="ladi-element"
-                      data-item-type="hour"
-                    >
-                      <div className="ladi-countdown-background ladi-lazyload" />
-                      <div className="ladi-countdown-text">
-                        <span>00</span>
-                      </div>
-                    </div>
-                    <div
-                      id="COUNTDOWN_ITEM3"
-                      className="ladi-element"
-                      data-item-type="minute"
-                    >
-                      <div className="ladi-countdown-background ladi-lazyload" />
-                      <div className="ladi-countdown-text">
-                        <span>00</span>
-                      </div>
-                    </div>
-                    <div
-                      id="COUNTDOWN_ITEM4"
-                      className="ladi-element"
-                      data-item-type="seconds"
-                    >
-                      <div className="ladi-countdown-background ladi-lazyload" />
-                      <div className="ladi-countdown-text">
-                        <span>00</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="HEADLINE108" className="ladi-element">
-                  <h3 className="ladi-headline ladi-transition ladi-lazyload">
-                    :<br />
-                  </h3>
-                </div>
-                <div id="HEADLINE109" className="ladi-element">
-                  <h3 className="ladi-headline ladi-transition ladi-lazyload">
-                    :<br />
-                  </h3>
-                </div>
-                <div id="HEADLINE110" className="ladi-element">
-                  <h3 className="ladi-headline ladi-transition ladi-lazyload">
-                    :<br />
-                  </h3>
-                </div>
-              </div>
-            </div>
+            <CountDown />
             <div
               id="HEADLINE111"
               className="ladi-element ladi-animation-hidden"
