@@ -754,6 +754,10 @@
     left: 0px;
 }
 
+#HEADLINE21>.ladi-headline {
+    padding: 0 15px;
+}
+
 #HEADLINE21>.ladi-headline,
 #HEADLINE24>.ladi-headline {
     font-family: TGyYSSZWdbGFyLnRZg;
@@ -787,6 +791,10 @@
 #HEADLINE23 {
     top: 445.8px;
     left: 1px;
+}
+
+#HEADLINE23>.ladi-headline {
+    padding: 0 15px;
 }
 
 #HEADLINE23>.ladi-headline,
