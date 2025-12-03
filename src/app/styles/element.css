@@ -29,7 +29,7 @@
 }
 
 #BOX1>.ladi-box {
-    background-image: url("/images/_DAT1220.webp");
+    background-image: url("/images/_DAT1220.avif");
     background-size: cover;
     background-origin: content-box;
     background-position: top;
@@ -463,7 +463,7 @@
 }
 
 #BOX3>.ladi-box {
-    background-image: url("/images/_DAT1137.webp");
+    background-image: url("/images/_DAT0066.avif");
     background-size: cover;
     background-origin: content-box;
     background-position: 50% 0%;
@@ -588,7 +588,7 @@
 }
 
 #BOX6>.ladi-box {
-    background-image: url("/images/_DAT0887.webp");
+    background-image: url("/images/_DAT0887.avif");
         background-size: cover;
     background-origin: content-box;
     background-position: 50% 0%;
@@ -1560,7 +1560,7 @@
 }
 
 #GROUP18 {
-    top: 564.9px;
+    top: 613.9px;
     left: 24.771px;
 }
 
@@ -1578,6 +1578,10 @@
 #HEADLINE76,
 #HEADLINE78 {
     width: 87px;
+}
+
+#HEADLINE71, #HEADLINE72 {
+    width: 140px;
 }
 
 #HEADLINE85,
@@ -1653,7 +1657,7 @@
 }
 
 #GROUP20 {
-    top: 769.9px;
+    top: 736.9px;
     left: 24.771px;
 }
 
@@ -1671,12 +1675,12 @@
 }
 
 #IMAGE17 {
-    top: 575.2px;
+    top: 622.2px;
     left: 227.48px;
 }
 
 #IMAGE17>.ladi-image>.ladi-image-background {
-    background-image: url("https://w.ladicdn.com/s350x350/6322a62f2dad980013bb5005/icon-thiep-huyenpsd_0010_vector-smart-object-20250703091211-71l4y.png");
+    background-image: url("https://w.ladicdn.com/s400x400/6322a62f2dad980013bb5005/icon-thiep-huyenpsd_0011_vector-smart-object-20250703091211-s2xg2.png");
 }
 
 #IMAGE18,
@@ -1701,7 +1705,7 @@
 }
 
 #IMAGE19 {
-    top: 767.9px;
+    top: 742.9px;
     left: 227.48px;
 }
 
@@ -1759,7 +1763,7 @@
 }
 
 #IMAGE13 {
-    top: 181.05px;
+    top: 232.05px;
     left: 148.48px;
 }
 
@@ -1774,7 +1778,7 @@
 }
 
 #GROUP11 {
-    top: 170.9px;
+    top: 220.05px;
     left: 221.23px;
 }
 
@@ -1824,7 +1828,7 @@
 }
 
 #GROUP12 {
-    top: 284.233px;
+    top: 363.95px;
     left: 221.23px;
 }
 
@@ -1840,7 +1844,7 @@
 }
 
 #IMAGE14 {
-    top: 295.95px;
+    top: 375.95px;
     left: 148.48px;
 }
 

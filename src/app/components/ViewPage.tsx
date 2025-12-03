@@ -412,22 +412,22 @@ export default function ViewPage({
               <div className="ladi-group">
                 <div id="HEADLINE85" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    16:00
+                    10:00
                   </h2>
                 </div>
                 <div id="HEADLINE86" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    TIỆC CƯỚI
+                    Đón Dâu
                   </h2>
                 </div>
                 <div id="HEADLINE87" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    NHÀ NỮ
+                  Bridal Procession
                   </h2>
                 </div>
               </div>
             </div>
-            <div id="GROUP19" className="ladi-element ladi-animation-hidden">
+            {/* <div id="GROUP19" className="ladi-element ladi-animation-hidden">
               <div className="ladi-group">
                 <div id="HEADLINE88" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
@@ -445,12 +445,12 @@ export default function ViewPage({
                   </h2>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div id="GROUP20" className="ladi-element ladi-animation-hidden">
               <div className="ladi-group">
                 <div id="HEADLINE91" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    10:00
+                    11:30
                   </h2>
                 </div>
                 <div id="HEADLINE92" className="ladi-element">
@@ -460,7 +460,7 @@ export default function ViewPage({
                 </div>
                 <div id="HEADLINE93" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                    NHÀ NỮ
+                  Ceremony
                   </h2>
                 </div>
               </div>
@@ -484,11 +484,11 @@ export default function ViewPage({
                 <div className="ladi-image-background ladi-lazyload" />
               </div>
             </div>
-            <div id="IMAGE18" className="ladi-element ladi-animation-hidden">
+            {/* <div id="IMAGE18" className="ladi-element ladi-animation-hidden">
               <div className="ladi-image">
                 <div className="ladi-image-background ladi-lazyload" />
               </div>
-            </div>
+            </div> */}
             <div id="IMAGE19" className="ladi-element ladi-animation-hidden">
               <div className="ladi-image">
                 <div className="ladi-image-background ladi-lazyload" />
@@ -532,7 +532,7 @@ export default function ViewPage({
                 </div>
                     <div id="HEADLINE72" className="ladi-element">
                       <h2 className="ladi-headline ladi-transition ladi-lazyload">
-                        NHÀ TRAI
+                        Guests arrival
                       </h2>
                     </div>
               </div>
@@ -556,7 +556,7 @@ export default function ViewPage({
                 </div>
               </div>
             </div>
-            <div id="GROUP14" className="ladi-element ladi-animation-hidden">
+            {/* <div id="GROUP14" className="ladi-element ladi-animation-hidden">
               <div className="ladi-group">
                 <div id="HEADLINE79" className="ladi-element">
                   <h2 className="ladi-headline ladi-transition ladi-lazyload">
@@ -574,7 +574,7 @@ export default function ViewPage({
                   </h2>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div id="IMAGE14" className="ladi-element ladi-animation-hidden">
               <div className="ladi-image">
                 <div className="ladi-image-background ladi-lazyload" />
@@ -614,11 +614,11 @@ export default function ViewPage({
                 </div>
               </div>
             </div> */}
-            <div id="IMAGE16" className="ladi-element ladi-animation-hidden">
+            {/* <div id="IMAGE16" className="ladi-element ladi-animation-hidden">
               <div className="ladi-image">
                 <div className="ladi-image-background ladi-lazyload" />
               </div>
-            </div>
+            </div> */}
             <div id="LINE5" className="ladi-element">
               <div className="ladi-line">
                 <div className="ladi-line-container" />
