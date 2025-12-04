@@ -746,7 +746,7 @@
 }
 
 #IMAGE8>.ladi-image>.ladi-image-background {
-    background-image: url("https://w.ladicdn.com/s500x400/6322a62f2dad980013bb5005/icon-thiep-huyenpsd_0004_vector-smart-object-20250703085842-8ctrp.png");
+    background-image: url("/images/weddingAA.avif");
 }
 
 #HEADLINE21 {
@@ -2509,7 +2509,8 @@
 }
 
 #IMAGE24>.ladi-image>.ladi-image-background {
-    background-image: url("https://w.ladicdn.com/s750x550/6322a62f2dad980013bb5005/untitled-1-20250703094359-cb7zx.png");
+    background-image: url("/images/AAlogo.avif");
+    background-position: center 30%;
 }
 
 #IMAGE24>.ladi-image {
