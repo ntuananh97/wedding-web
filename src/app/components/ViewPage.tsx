@@ -10,10 +10,16 @@ export default function ViewPage({
     place,
     address,
     mapUrl,
+    isGroom = false,
+    invitationTitle = "",
+    invitationTime = ""
 }: {
     place: string;
     address: string;
     mapUrl: string;
+    invitationTitle: string;
+    invitationTime: string;
+    isGroom?: boolean
 }) {
   useScrollAnimation();
   return (
@@ -41,12 +47,18 @@ export default function ViewPage({
                   </h3>
                 </div>
                 <div id="HEADLINE4" className="ladi-element">
-                  <h3 className="ladi-headline">
+                  {isGroom ?  <h3 className="ladi-headline">
                     Tuấn Anh
                     <br />
                     Lan Anh
                     <br />
-                  </h3>
+                  </h3> : <h3 className="ladi-headline">
+                    Lan Anh
+                    <br />
+                    Tuấn Anh
+                    <br />
+                  </h3>}
+                  
                 </div>
               </div>
             </div>
@@ -224,7 +236,7 @@ export default function ViewPage({
             </div>
             <div id="HEADLINE21" className="ladi-element ladi-animation-hidden">
               <h2 className="ladi-headline ladi-lazyload">
-                Trân trọng kính mời đến dự bữa tiệc mừng lễ thành hôn của chúng tôi
+                Trân trọng kính mời đến dự bữa tiệc mừng {invitationTitle} của chúng tôi
               </h2>
             </div>
             <div id="HEADLINE22" className="ladi-element ladi-animation-hidden">
@@ -245,7 +257,7 @@ export default function ViewPage({
               </h2>
             </div>
             <div id="HEADLINE25" className="ladi-element ladi-animation-hidden">
-              <h2 className="ladi-headline ladi-lazyload">16:00</h2>
+              <h2 className="ladi-headline ladi-lazyload">{invitationTime}</h2>
             </div>
             <a
               href={mapUrl}
