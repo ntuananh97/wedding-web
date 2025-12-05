@@ -53,6 +53,8 @@ export default function RootLayout({
       
         <meta name="revisit-after" content="days" />
         <link rel="dns-prefetch" />
+    <link rel="preload" href="/images/_DAT1220.avif" as="image" />
+
         <link
           rel="preconnect"
           href="https://fonts.googleapis.com/"

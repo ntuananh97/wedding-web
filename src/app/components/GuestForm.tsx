@@ -136,7 +136,7 @@ const GuestForm = () => {
 
   const showPopup2 = async () => {
     // Load messages first
-    await loadMessages();
+    loadMessages();
     
     // Show the backdrop
     const backdrop = document.querySelector(".backdrop-popup");
