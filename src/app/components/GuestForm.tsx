@@ -1,36 +1,105 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+
+interface GuestMessageData {
+  _id: string;
+  name: string;
+  message: string;
+  willAttend: string;
+  attendWith: string;
+  guestOf: string;
+  createdAt: string;
+}
 
 const GuestForm = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState<{ name?: string; message?: string }>({});
+  const [messages, setMessages] = useState<GuestMessageData[]>([]);
+  const [isLoadingMessages, setIsLoadingMessages] = useState(false);
+
+  const validateForm = (formData: FormData): boolean => {
+    const newErrors: { name?: string; message?: string } = {};
+    
+    const name = formData.get('name') as string;
+    const message = formData.get('message') as string;
+
+    if (!name || !name.trim()) {
+      newErrors.name = 'Vui lòng nhập tên của bạn';
+    }
+
+    if (!message || !message.trim()) {
+      newErrors.message = 'Vui lòng nhập lời nhắn';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
+    // Lưu tham chiếu đến form trước khi xử lý bất đồng bộ
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     
-    // Optional: You can add form data processing here
-    const formData = new FormData(e.currentTarget);
-  
-    // Show the backdrop
-    const backdrop = document.querySelector(".backdrop-popup");
-    if (backdrop) {
-      const backdropEl = backdrop as HTMLElement;
-      backdropEl.style.display = "block";
-      backdropEl.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    } else {
-      console.error("Backdrop not found!");
+    // Validate form
+    if (!validateForm(formData)) {
+      return;
     }
-    
-    // Show the popup
-    const popup = document.getElementById("POPUP1");
-    if (popup) {
-      popup.style.display = "block";
-      popup.style.top = "0px";
-      popup.style.left = "0px";
-    } else {
-      console.error("Popup not found!");
+
+    setIsSubmitting(true);
+    setErrors({});
+
+    try {
+      // Prepare data to send
+      const data = {
+        name: formData.get('name') as string,
+        message: formData.get('message') as string,
+        willAttend: formData.get('form_item7') as string,
+        attendWith: formData.get('form_item8') as string,
+        guestOf: formData.get('form_item9') as string,
+      };
+
+      // Send to API
+      const response = await fetch('/api/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || 'Có lỗi xảy ra khi gửi lời nhắn');
+      }
+
+      // Reset the form after successful submission
+      form.reset();
+      
+      // Show the backdrop
+      const backdrop = document.querySelector(".backdrop-popup");
+      if (backdrop) {
+        const backdropEl = backdrop as HTMLElement;
+        backdropEl.style.display = "block";
+        backdropEl.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+      }
+      
+      // Show the popup
+      const popup = document.getElementById("POPUP1");
+      if (popup) {
+        popup.style.display = "block";
+        popup.style.top = "0px";
+        popup.style.left = "0px";
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Có lỗi xảy ra khi gửi lời nhắn. Vui lòng thử lại!';
+      alert(errorMessage);
+    } finally {
+      setIsSubmitting(false);
     }
-    
-    // Reset the form after submission
-    e.currentTarget.reset();
   };
 
   const closePopup = () => {
@@ -47,7 +116,27 @@ const GuestForm = () => {
     }
   };
 
-  const showPopup2 = () => {
+  const loadMessages = async () => {
+    setIsLoadingMessages(true);
+    try {
+      const response = await fetch('/api/messages?limit=100');
+      const result = await response.json();
+
+      if (result.success) {
+        setMessages(result.data);
+      } else {
+        console.error('Error loading messages:', result.error);
+      }
+    } catch (error) {
+      console.error('Error loading messages:', error);
+    } finally {
+      setIsLoadingMessages(false);
+    }
+  };
+
+  const showPopup2 = async () => {
+    // Load messages first
+    await loadMessages();
     
     // Show the backdrop
     const backdrop = document.querySelector(".backdrop-popup");
@@ -59,14 +148,14 @@ const GuestForm = () => {
       console.error("Backdrop not found!");
     }
     
-    // Show POPUP2
-    const popup2 = document.getElementById("POPUP2");
-    if (popup2) {
-      popup2.style.display = "block";
-      popup2.style.top = "0px";
-      popup2.style.left = "0px";
+    // Show POPUP3 (messages list)
+    const popup3 = document.getElementById("POPUP3");
+    if (popup3) {
+      popup3.style.display = "block";
+      popup3.style.top = "0px";
+      popup3.style.left = "0px";
     } else {
-      console.error("POPUP2 not found!");
+      console.error("POPUP3 not found!");
     }
   };
 
@@ -81,6 +170,20 @@ const GuestForm = () => {
     const popup2 = document.getElementById("POPUP2");
     if (popup2) {
       popup2.style.display = "none";
+    }
+  };
+
+  const closePopup3 = () => {
+    // Hide the backdrop
+    const backdrop = document.querySelector(".backdrop-popup");
+    if (backdrop) {
+      (backdrop as HTMLElement).style.display = "none";
+    }
+    
+    // Hide POPUP3
+    const popup3 = document.getElementById("POPUP3");
+    if (popup3) {
+      popup3.style.display = "none";
     }
   };
 
@@ -100,6 +203,29 @@ const GuestForm = () => {
     const popup2 = document.getElementById("POPUP2");
     if (popup2) {
       popup2.style.display = "none";
+    }
+
+    const popup3 = document.getElementById("POPUP3");
+    if (popup3) {
+      popup3.style.display = "none";
+    }
+  };
+
+  const showGiftPopup = () => {
+    // Show the backdrop
+    const backdrop = document.querySelector(".backdrop-popup");
+    if (backdrop) {
+      const backdropEl = backdrop as HTMLElement;
+      backdropEl.style.display = "block";
+      backdropEl.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    }
+    
+    // Show POPUP2 (gift popup)
+    const popup2 = document.getElementById("POPUP2");
+    if (popup2) {
+      popup2.style.display = "block";
+      popup2.style.top = "0px";
+      popup2.style.left = "0px";
     }
   };
 
@@ -134,13 +260,15 @@ const GuestForm = () => {
                     id="BUTTON2"
                     className="ladi-element ladi-animation-hidden"
                     onClick={() => {
-                      // Trigger form submit
-                      const form = document.querySelector("#FORM2 form") as HTMLFormElement;
-                      if (form) {
-                        form.requestSubmit();
+                      if (!isSubmitting) {
+                        // Trigger form submit
+                        const form = document.querySelector("#FORM2 form") as HTMLFormElement;
+                        if (form) {
+                          form.requestSubmit();
+                        }
                       }
                     }}
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: isSubmitting ? "not-allowed" : "pointer", opacity: isSubmitting ? 0.6 : 1 }}
                   >
                     <div className="ladi-button ladi-transition">
                       <div className="ladi-button-background ladi-lazyload" />
@@ -149,7 +277,7 @@ const GuestForm = () => {
                         className="ladi-element ladi-button-headline"
                       >
                         <p className="ladi-headline ladi-transition ladi-lazyload">
-                          GỬI LỜI NHẮN &amp; xác nhận
+                          {isSubmitting ? 'ĐANG GỬI...' : 'GỬI LỜI NHẮN & xác nhận'}
                         </p>
                       </div>
                     </div>
@@ -166,7 +294,13 @@ const GuestForm = () => {
                           type="text"
                           placeholder="Tên của bạn"
                           defaultValue=""
+                          required
                         />
+                        {errors.name && (
+                          <div style={{ color: 'red', fontSize: '12px', marginTop: '5px' }}>
+                            {errors.name}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -181,7 +315,13 @@ const GuestForm = () => {
                           className="ladi-form-control"
                           placeholder="Gửi lời nhắn đến cô dâu chú rể"
                           defaultValue={""}
+                          required
                         />
+                        {errors.message && (
+                          <div style={{ color: 'red', fontSize: '12px', marginTop: '5px' }}>
+                            {errors.message}
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -253,7 +393,7 @@ const GuestForm = () => {
                 data-action="true"
                 id="BUTTON3"
                 className="ladi-element ladi-animation-hidden"
-                onClick={showPopup2}
+                onClick={showGiftPopup}
                 style={{ cursor: "pointer" }}
               >
                 <div className="ladi-button">
@@ -268,6 +408,44 @@ const GuestForm = () => {
                   </div>
                 </div>
               </div>
+              <div
+                data-action="true"
+                id="BUTTON3"
+                className="ladi-element ladi-animation-hidden"
+                onClick={showPopup2}
+                style={{ cursor: "pointer", top: "404px" }}
+              >
+                <div className="ladi-button">
+                  <div className="ladi-button-background ladi-lazyload" />
+                  <div
+                    id="BUTTON_TEXT3"
+                    className="ladi-element ladi-button-headline"
+                  >
+                    <p className="ladi-headline ladi-lazyload">
+                    XEM LỜI CHÚC&nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div>
+              {/* <div
+                data-action="true"
+                id="BUTTON4"
+                className="ladi-element ladi-animation-hidden"
+                onClick={showPopup2}
+                style={{ cursor: "pointer", marginTop: "10px" }}
+              >
+                <div className="ladi-button">
+                  <div className="ladi-button-background ladi-lazyload" />
+                  <div
+                    id="BUTTON_TEXT4"
+                    className="ladi-element ladi-button-headline"
+                  >
+                    <p className="ladi-headline ladi-lazyload">
+                      XEM LỜI CHÚC&nbsp;
+                    </p>
+                  </div>
+                </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -375,6 +553,73 @@ const GuestForm = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div id="POPUP3" className="ladi-element">
+            <div className="ladi-popup">
+              <div className="ladi-popup-background" />
+              <div className="popup-close" onClick={closePopup3}></div>
+            
+              {/* <div id="HEADLINE136" className="ladi-element">
+                <h2 className="ladi-headline" style={{ textAlign: 'center', padding: '20px 0' }}>
+                  Lời chúc từ khách mời
+                </h2>
+              </div> */}
+              <div id="MESSAGES_CONTAINER" className="ladi-element" style={{
+                maxHeight: '440px',
+                overflowY: 'auto',
+                padding: '20px',
+                top: 0,
+    width: "100%",
+              }}>
+                   <h2 className="ladi-headline" style={{ textAlign: 'center', padding: '20px 0', fontSize: '20px', fontWeight: 'bold' }}>
+                  Lời chúc từ khách mời
+                </h2>
+                {isLoadingMessages ? (
+                  <div style={{ textAlign: 'center', padding: '20px' }}>
+                    <p>Đang tải lời chúc...</p>
+                  </div>
+                ) : messages.length === 0 ? (
+                  <div style={{ textAlign: 'center', padding: '20px' }}>
+                    <p>Chưa có lời chúc nào.</p>
+                  </div>
+                ) : (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                    {messages.map((msg) => (
+                      <div
+                        key={msg._id}
+                        style={{
+                          backgroundColor: '#f9f9f9',
+                          padding: '15px',
+                          borderRadius: '8px',
+                          boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                        }}
+                      >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+                          <strong style={{ fontSize: '16px', color: '#333' }}>{msg.name}</strong>
+                          <span style={{ fontSize: '12px', color: '#999' }}>
+                            {new Date(msg.createdAt).toLocaleDateString('vi-VN')}
+                          </span>
+                        </div>
+                        <p style={{ margin: '8px 0', color: '#555', lineHeight: '1.5' }}>
+                          {msg.message}
+                        </p>
+                        <div style={{ fontSize: '12px', color: '#777', marginTop: '8px', display: 'flex', gap: '10px', flexDirection: 'column' }}>
+                          {msg.willAttend && (
+                            <div><span style={{ color: 'green' }}>✓</span> {msg.willAttend}</div>
+                          )}
+                          {msg.attendWith && (
+                            <div><span style={{ color: 'blue' }}>👥</span> Tham dự: {msg.attendWith}</div>
+                          )}
+                          {msg.guestOf && (
+                            <div><span style={{ color: 'red' }}>💐</span> {msg.guestOf}</div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>

@@ -322,6 +322,7 @@
 #IMAGE24>.ladi-image>.ladi-image-background,
 #IMAGE41>.ladi-image>.ladi-image-background,
 #POPUP1,
+#POPUP3,
 #IMAGE37,
 #IMAGE37>.ladi-image>.ladi-image-background,
 #BOX24,
@@ -2677,20 +2678,21 @@
     height: 0px;
 }
 
-#POPUP1 {
+#POPUP1, #POPUP3 {
     width: 420px;
     height: 441px;
 }
 
 #POPUP1,
-#POPUP2 {
+#POPUP2, #POPUP3 {
     right: 0px;
     bottom: 0px;
     margin: auto;
 }
 
 #POPUP1>.ladi-popup>.ladi-popup-background,
-#POPUP2>.ladi-popup>.ladi-popup-background {
+#POPUP2>.ladi-popup>.ladi-popup-background,
+#POPUP3>.ladi-popup>.ladi-popup-background {
     background-color: rgb(255, 255, 255);
 }
 
